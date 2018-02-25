@@ -1,0 +1,30 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "Simple IoT Platform -DB Module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "SET DEBUG=platziverse:* && node setup.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgenovoa/platziverse.git"
+  },
+  "author": "Jorge Garcia Novoa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgenovoa/platziverse/issues"
+  },
+  "homepage": "https://github.com/jorgenovoa/platziverse#readme",
+  "devDependencies": {
+    "standard": "^11.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "inquirer": "^5.1.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.34.0"
+  }
+}
