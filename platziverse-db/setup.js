@@ -8,7 +8,6 @@ const db = require('./')
 const prompt = inquirer.createPromptModule()
 
 async function setup () {
-
   const answer = await prompt([
     {
       type: 'confirm',
@@ -17,7 +16,7 @@ async function setup () {
     }
   ])
 
-  if(!answer.setup){
+  if (!answer.setup) {
     return console.log('Nothing happened :)')
   }
 
