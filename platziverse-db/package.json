@@ -4,7 +4,7 @@
   "description": "Simple IoT Platform -DB Module",
   "main": "index.js",
   "scripts": {
-    "test": "SET DEBUG=platziverse:* && ava tests/ --verbose",
+    "test": "SET DEBUG=platziverse:*  && nyc --reporter-dir=coverage ava tests/ --verbose",
     "setup": "SET DEBUG=platziverse:* && node setup.js",
     "lint": "standard"
   },
@@ -20,10 +20,16 @@
   "homepage": "https://github.com/jorgenovoa/platziverse#readme",
   "devDependencies": {
     "ava": "^0.25.0",
+    "babel-eslint": "^8.2.2",
+    "nyc": "^11.4.1",
+    "proxyquire": "^2.0.0",
+    "sinon": "^4.4.2",
     "sqlite3": "^3.1.13",
     "standard": "^11.0.0"
   },
   "dependencies": {
+    "ajv": "^6.2.0",
+    "ajv-keywords": "^3.1.0",
     "chalk": "^2.3.1",
     "defaults": "^1.0.3",
     "inquirer": "^5.1.0",
