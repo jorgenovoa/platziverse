@@ -1,0 +1,4 @@
+{
+    // La ruta de acceso del shell que el terminal usa en OS X.
+  "terminal.integrated.shell.osx": "/bin/zsh"
+}
